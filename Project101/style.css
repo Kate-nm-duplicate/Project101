@@ -1,0 +1,166 @@
+/* General Body Styles */
+:root {
+  --main-branding-color: #272a31;
+  --main-branding-color-one: #ec5242;
+  --main-branding-color-two: #d3d3d3;
+  --main-branding-color-three: #c86b8a;
+  --main-branding-color-four: #e1c3c3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Top Navigation Bar */
+header {
+  background-color: #4a4949;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 60px;
+  font-size: 0.65em;
+  font-weight: 500;
+}
+
+.logo {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.social-links a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Main Navigation Bar */
+.main-nav {
+  background-color: #ffffff;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 60px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.main-nav ul li {
+  margin: 15px;
+}
+
+.main-nav ul li a {
+  color: #686767;
+  text-decoration: none;
+  padding: 15px 0;
+  display: block;
+  font-weight: 600;
+}
+.main-nav ul li a:hover {
+  color: #e74c3c;
+}
+.main-nav ul li a.highlight {
+  padding: 8px 26px;
+  border: 4px solid #e74c3c;
+}
+
+/* Banner Section */
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  position: relative;
+  background-image: url(img/fav3.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffffea;
+  z-index: 1;
+}
+.banner * {
+  position: relative;
+  z-index: 2;
+}
+
+.banner .heading {
+  color: #e74c3c;
+  font-size: 3em;
+}
+
+.banner h2 {
+  font-size: 3.6rem; /* Adjust as needed */
+  background-image: url("img/fav3.jpeg"); /* Same image as the background */
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 1000;
+  font-style: none;
+}
+.box {
+  height: 110px;
+  width: 100%;
+  max-width: 900px;
+  background-color: #f5f5f5;
+  color: #4a4949;
+  border: 4px solid #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.banner p {
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.main-programs {
+  padding: 50px;
+  background-color: var(--main-branding-color);
+}
+.main-programs h2 {
+  position: relative;
+  color: #e8e5e5;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.main-programs h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: var(--main-branding-color-one);
+}
